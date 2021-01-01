@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>คำรับรองผู้ปกครอง</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link href="css/bulma.css">
+  
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+          alt="alternatetext" style="width:80px;height:80px;">
+        <p align="center">คำรับรองผู้ปกครอง</p>
+      </h1>
+      <p class="subtitle">
+      <p align="right">เขียนที่&nbsp;บ้านเลขที่:<input type="text" maxlength="5" name="text_plain"
+        onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" size="4" />
+        &nbsp;หมู่ที่:<input type="text" maxlength="2" name="text_plain"
+        onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" size="4" /> 
+        ตำบล:<input type="text"  name="text_key" maxlength="20" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+    </p>
+        <p align="right">อำเภอ:<input type="text"  name="text_key" maxlength="20" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+            &nbsp;จังหวัด:<input type="text"  name="text_key" maxlength="20" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/>  </p> 
+            <p align="right">รหัสไปรษณีย์:<input type="text" maxlength="5" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" size="7" /> 
+                &nbsp;โทรศัพท์:<input type="text" maxlength="10" name="text_plain"
+        onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" size="12" /> </p> 
+             <p align="right">วัน/เดือน/ปีที่กรอก:</label>
+            <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31"> </p>
+                              <!---------------------------------->
+            <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
+                <label class="radio"></label>
+                <input type="radio" name="answer">
+                1
+                </label>
+                <label class="radio">
+                  <input type="radio" name="answer">
+                  2
+                </label>
+                <input type="text" placeholder="ปีการศึกษา" maxlength="4" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" />
+              </p>
+              <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตามที่ <label class="radio"></label>
+                <input type="radio" name="answer">
+                นาย
+                </label>
+                <label class="radio">
+                  <input type="radio" name="answer">
+                  นาง
+                </label>
+                <label class="radio">
+                  <input type="radio" name="answer">
+                  นางสาว
+                </label>
+              <input type="text" placeholder="ชื่อ" name="text_key" maxlength="50" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+              <input type="text" placeholder="นามสกุล" maxlength="50" name="text_key" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/></p> 
+              <p>
+              </form>
+              <form>
+                รหัสนักศึกษา (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                  onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" />
+                โทรศัพท์มือถือ (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                  onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" /> </p>
+                  <p>ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา ในภาคเรียนที่ 
+                    <label class="radio"></label>
+                    <input type="radio" name="answer">
+                    1
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="answer">
+                      2
+                    </label></p>
+                    <p>
+                        <textarea class="textarea" placeholder="เนื่องจาก" rows="10"></textarea>
+                    </p>
+                  <p>ข้าพเจ้า <label class="radio"></label>
+                    <input type="radio" name="answer">
+                    นาย
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="answer">
+                      นาง
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="answer">
+                      นางสาว
+                    </label>
+                  <input type="text" placeholder="ชื่อ" name="text_key" maxlength="50" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+                  <input type="text" placeholder="นามสกุล" maxlength="50" name="text_key" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/></p> 
+                  <p>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา จึงเรียนมาเพื่อโปรดทราบ </p>  <br />
+                  <p  align="right"><b>ขอแสดงความนับถือ</b></p>
+                  <div class="file has-name is-right">
+                    <label class="file-label">
+                      <input class="file-input" type="file" name="resume" align="right">
+                      <span class="file-cta">
+                        <span class="file-icon">
+                          <i class="fas fa-upload"></i>
+                        </span>
+                        <span class="file-label">
+                          อัปโหลดภาพลายเซ้นหรือลายนิ้วมือ
+                        </span>
+                      </span>
+                    </label>
+                  </div>
+              </p>
+                <p align="right"></p>
+                <div class="" >
+                    <p align="center" class="control" >
+                      <button class="button is-link" >
+                        บันทึก
+                      </button>
+                    </p>
+                  </div>
+    </p>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>มจท.10</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link href="css/bulma.css">
+  
+</head>
+
+<body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png"
+          alt="alternatetext" style="width:80px;height:80px;">
+        <p align="center">คําร้องขอลาพักการศึกษา</p>
+      </h1>
+      <p class="subtitle">
+      <p align="center">(สําหรับนักศึกษาที่ได้ศึกษามาแล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+      </p><label for="start">วัน/เดือน/ปีที่กรอก:</label>
+      <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+      <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
+        <label class="radio"></label>
+        <input type="radio" name="answer">
+        1
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer">
+          2
+        </label>
+        <input type="text" placeholder="ปีการศึกษา" maxlength="4" name="text_plain"
+        onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" />
+      </p>
+      <form>
+      <p><b>เรียน</b> คณะบดีคณะ
+      <div class="field">
+        <select>
+          <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+          <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+          <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+          <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+          <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+          <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+          <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+          <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+          <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+          <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+          <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+          <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+          <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+          <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+          <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+          <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+        </select>
+      </form>
+        </p>
+        <form>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ข้าพเจ้า <label class="radio"></label>
+          <input type="radio" name="answer">
+          นาย
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            นาง
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            นางสาว
+          </label>
+        <input type="text" placeholder="ชื่อ" name="text_key" maxlength="50" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+        <input type="text" placeholder="นามสกุล" maxlength="50" name="text_key" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/></p> 
+        <p>
+        </form>
+        <form>
+          รหัสนักศึกษา (10หลัก) <input type="text" maxlength="10" name="text_plain"
+            onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" />
+          โทรศัพท์มือถือ (10หลัก) <input type="text" maxlength="10" name="text_plain"
+            onKeyUp="if(isNaN(this.value)){ alert('กรุณาพิมพ์ตัวเลข'); this.value='';}" /> </p>
+        </p>
+      </form>
+      <form>
+        <p>
+          โปรดระบุหลักสูตรปริญญาตรี <label class="radio"></label>
+          <input type="radio" name="answer">
+          4 – 5 ปี
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            4 ปีเทียบเข้าเรียน (2ปี)
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            ภาคปกติ
+          </label>
+          </label>
+          <label class="radio">
+            <input type="radio" name="answer">
+            ภาคสมทบ
+          </label>
+           <p> คณะ 
+            <select>
+              <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+              <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+              <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+              <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+              <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+              <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+              <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+              <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+              <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+              <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+              <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+              <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+              <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+              <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+              <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+              <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+            </select>
+            สาขา<input type="text" placeholder="สาขา" name="text_key" maxlength="30" onKeyUp="if(!(isNaN(this.value))) { alert('กรุณาพิมพ์ตัวอักษร'); this.value='';}"/> 
+           </p>
+          </form>
+          <form>
+          <p>
+          <textarea class="textarea" placeholder="มีความประสงค์จะลาเนื่องจาก" rows="10"></textarea>
+          <p>
+            <b>พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง/ใบรับรองแพทย์/เอกสารอื่นๆ </b>
+            <div class="file has-name is-boxed">
+              <label class="file-label">
+                <input class="file-input" type="file" name="resume">
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <i class="fas fa-upload"></i>
+                  </span>
+                  <span class="file-label">
+                    อัปโหลดรูปภาพ
+                  </span>
+                </span>
+                <span class="file-name">
+                  Screen Shot 2017-07-29 at 15.54.25.png
+                </span>
+              </label>
+            </div>
+          </p>
+          <b>จึงเรียนมาเพื่อโปรดพิจารณา </b>
+        </form>
+        <p  align="right"><b>ขอแสดงความนับถือ</b></p>
+        <div class="file has-name is-right">
+          <label class="file-label">
+            <input class="file-input" type="file" name="resume" align="right">
+            <span class="file-cta">
+              <span class="file-icon">
+                <i class="fas fa-upload"></i>
+              </span>
+              <span class="file-label">
+                อัปโหลดภาพลายเซ้นหรือลายนิ้วมือ
+              </span>
+            </span>
+          </label>
+        </div>
+        <pre>	 
+          <b>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</b>
+1. นักศึกษากรอกคําร้องขอลาพักการศึกษา
+2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ
+3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ  <b>(ชั้น 3 อาคารอํานวย ยศสุข)</b>
+4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา  <b>(คณะที่นักศึกษาสังกัด)</b>
+5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร  <b>(คณะที่นักศึกษาสังกัด)</b>
+6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ  <b></b>(คณะที่นักศึกษาสังกัด)
+7. นําคําร้องไปชําระเงิน  <b>(กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)</b>
+8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว  <b>(ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ)</b>
+เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป
+9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </pre>
+        <div class="คำรับรองผู้ปกครอง" >
+          <p align="center" class="control" >
+            <button class="button is-link" >
+              ไปหน้าคำรับรองผู้ปกครอง
+            </button>
+          </p>
+        </div>
+      </p>
+        </p>
+        </p>
+        </form>
+        </p>
+      </div>
+      </p>
+    </div>
+  </section>
+</body>
+</body>
+</html>
+</body>
+</html>
